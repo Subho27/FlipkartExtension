@@ -1,0 +1,50 @@
+body {
+    background-color: #2874f0;
+    width : 230px;
+    height : auto;
+}
+
+.description {
+    color: white;
+    font: 12px Roboto, Arial, Sans-serif;
+}
+
+#add, #remove, #compare {
+    font-size: 13px;
+    color: #2874f0;
+    font-weight: 500;
+    background-color: #fff;
+    cursor: pointer;
+    border-radius: 2px;
+    height: 32px;
+    padding: 3px 15px;
+    border: 1px solid #dbdbdb;
+}
+
+a:link {
+    text-decoration: none;
+}
+
+.center {
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+table {
+    width: 100%;
+}
+
+.remove-button {
+    border-radius: 50%;
+    color: white;
+    background-color: red;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+}
+
+#compare {
+    cursor: not-allowed;
+    margin-top: 10px;
+}

@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Compare Laptops</title>
+        <link rel="stylesheet" href="compare.css">
+    </head>
+    <body>
+        <div class="container">
+            <div style="width: 100%; overflow: hidden;">
+                <div style="width: 500px; float: left;">
+                    <p class="note">
+                        <strong>NOTE</strong> - No. of star denotes fields that should be considered as important while
+                        comparing laptops. (Less no. of star denotes less importance where as more no. of
+                        stars denotes more impotance)
+                    </p>
+                </div>
+                <div style="float:right; width:100px; border: 1px solid white; color: white; padding:10px; margin-top:10px;">
+                    <div class='my-legend'>
+                        <div class='legend-scale'>
+                            <ul class='legend-labels'>
+                                <li><span style='background: #217aed;'></span><strong>BEST</strong></li>
+                                <li><span style='background: #8badd9;'></span><strong>WORST</strong></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <table>
+                <thead>
+                    <tr id="laptop-name">
+                        <th class="background">
+                            <div class="c1">Properties</div>
+                            <div class="c2">Laptops</div>
+                        </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr id="price">
+                        <td>Price*</td>
+                    </tr>
+                    <tr id="rating">
+                        <td>Rating*</td>
+                    </tr>
+                    <tr id="rating-factor">
+                        <td>Rating Factor**</td>
+                    </tr>
+                    <tr id="series" class="tooltip">
+                        <td>Series<span class="tooltiptext">Series name, nothing to compare</span></td>
+                    </tr>
+                    <tr id="model-number" class="tooltip">
+                        <td>Model Number<span class="tooltiptext">Model Number, nothing to compare</span></td>
+                    </tr>
+                    <tr id="color" class="tooltip">
+                        <td>Color<span class="tooltiptext">Color, nothing to compare</span></td>
+                    </tr>
+                    <tr id="type" class="tooltip">
+                        <td>Type<span class="tooltiptext">Choose type that you want, nothing to compare</span></td>
+                    </tr>
+                    <tr id="suitable-for" class="tooltip">
+                        <td>Suitable for*<span class="tooltiptext">Choose type that you want, nothing to compare</span></td>
+                    </tr>
+                    <tr id="power-supply">
+                        <td>Power Supply*</td>
+                    </tr>
+                    <tr id="battery-cell">
+                        <td>Battery Cell</td>
+                    </tr>
+                    <tr id="battery-backup">
+                        <td>Battery Backup</td>
+                    </tr>
+                    <tr id="ms-office-provided">
+                        <td>MS Office Provided</td>
+                    </tr>
+                    <tr id="dedicated-graphic-memory-type">
+                        <td>Dedicated Graphic Memory Type*</td>
+                    </tr>
+                    <tr id="dedicated-graphic-memory-capacity">
+                        <td>Dedicated Graphic Memory Capacity**</td>
+                    </tr>
+                    <tr id="processor-brand" class="tooltip">
+                        <td>Processor Brand*<span class="tooltiptext">Processor Brand, nothing to compare</span></td>
+                    </tr>
+                    <tr id="processor-name">
+                        <td>Processor Name**</td>
+                    </tr>
+                    <tr id="processor-generation">
+                        <td>Processor Generation***</td>
+                    </tr>
+                    <tr id="processor-variant" class="tooltip">
+                        <td>Processor Variant<span class="tooltiptext">You may compare externally, if same generation but different variants</span></td>
+                    </tr>
+                    <tr id="chipset" class="tooltip">
+                        <td>Chipset<span class="tooltiptext">You may compare externally, if same generation but different chipsets</span></td>
+                    </tr>
+                    <tr id="clock-speed">
+                        <td>Clock Speed**</td>
+                    </tr>
+                    <tr id="ssd">
+                        <td>SSD*</td>
+                    </tr>
+                    <tr id="ssd-capacity">
+                        <td>SSD Capacity**</td>
+                    </tr>
+                    <tr id="ram">
+                        <td>RAM*</td>
+                    </tr>
+                    <tr id="ram-type">
+                        <td>RAM Type*</td>
+                    </tr>
+                    <tr id="ram-frequency">
+                        <td>RAM Frequency**</td>
+                    </tr>
+                    <tr id="memory-slots">
+                        <td>Memory Slots</td>
+                    </tr>
+                    <tr id="cache">
+                        <td>Cache*</td>
+                    </tr>
+                    <tr id="graphic-processor">
+                        <td>Graphic Processor</td>
+                    </tr>
+                    <tr id="number-of-cores">
+                        <td>Number of Cores*</td>
+                    </tr>
+                    <tr id="operating-system">
+                        <td>Operating System*</td>
+                    </tr>
+                    <tr id="mic-in">
+                        <td>Mic In</td>
+                    </tr>
+                    <tr id="usb-port">
+                        <td>USB Port</td>
+                    </tr>
+                    <tr id="hdmi-port">
+                        <td>HDMI Port</td>
+                    </tr>
+                    <tr id="hardware-interface">
+                        <td>Hardware Interface</td>
+                    </tr>
+                    <tr id="touchscreen">
+                        <td>Touchscreen</td>
+                    </tr>
+                    <tr id="screen-size">
+                        <td>Screen Size</td>
+                    </tr>
+                    <tr id="screen-resolution">
+                        <td>Screen Resolution*</td>
+                    </tr>
+                    <tr id="screen-type">
+                        <td>Screen Type**</td>
+                    </tr>
+                    <tr id="aspect-ratio">
+                        <td>Aspect Ratio</td>
+                    </tr>
+                    <tr id="refresh-rate">
+                        <td>Refresh Rate**</td>
+                    </tr>
+                    <tr id="viewing-angle">
+                        <td>Viewing Angle</td>
+                    </tr>
+                    <tr id="brightness">
+                        <td>Brightness*</td>
+                    </tr>
+                    <tr id="contrast">
+                        <td>Contrast*</td>
+                    </tr>
+                    <tr id="speakers">
+                        <td>Speakers**</td>
+                    </tr>
+                    <tr id="internal-mic">
+                        <td>Internal Mic</td>
+                    </tr>
+                    <tr id="sound-properties">
+                        <td>Sound Properties</td>
+                    </tr>
+                    <tr id="wireless-lan">
+                        <td>Wireless LAN*</td>
+                    </tr>
+                    <tr id="bluetooth">
+                        <td>Bluetooth*</td>
+                    </tr>
+                    <tr id="ethernet">
+                        <td>Ethernet*</td>
+                    </tr>
+                    <tr id="dimensions">
+                        <td>Dimensions</td>
+                    </tr>
+                    <tr id="weight">
+                        <td>Weight*</td>
+                    </tr>
+                    <tr id="disk-drive">
+                        <td>Disk Drive</td>
+                    </tr>
+                    <tr id="web-camera">
+                        <td>Web Camera</td>
+                    </tr>
+                    <tr id="security-chip">
+                        <td>Security Chip</td>
+                    </tr>
+                    <tr id="keyboard">
+                        <td>Keyboard</td>
+                    </tr>
+                    <tr id="backlit-keyboard">
+                        <td>Backlit Keyboard</td>
+                    </tr>
+                    <tr id="additional-features">
+                        <td>Additional Features</td>
+                    </tr>
+                    <tr id="warranty-summary">
+                        <td>Warranty Summary*</td>
+                    </tr>
+                    <tr id="warranty-service-type">
+                        <td>Warranty Service Type</td>
+                    </tr>
+                    <tr id="covered-in-warranty">
+                        <td>Covered in Warranty</td>
+                    </tr>
+                    <tr id="not-covered-in-warranty">
+                        <td>Not Covered in Warranty</td>
+                    </tr>
+                    <tr id="domestic-warranty">
+                        <td>Domestic Warranty</td>
+                    </tr>
+                    <tr id="performance-rating">
+                        <td>Performance Rating**</td>
+                    </tr>
+                    <tr id="battery-rating">
+                        <td>Battery Rating**</td>
+                    </tr>
+                    <tr id="design-rating">
+                        <td>Design Rating**</td>
+                    </tr>
+                    <tr id="display-rating">
+                        <td>Display Rating**</td>
+                    </tr>
+                    <tr id="remove-item">
+                        <td>Remove this Item?</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <script src="compare.js"></script>
+    </body>
+</html>

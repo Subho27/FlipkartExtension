@@ -1,0 +1,168 @@
+/*html,
+body {
+    height: 100%;
+}*/
+
+body {
+    margin: 0;
+    height: 3400px;
+    background: -webkit-linear-gradient(45deg, #49a09d, #5f2c82);
+    background: linear-gradient(45deg, #49a09d, #5f2c82);
+    font-family: sans-serif;
+    font-weight: 100;
+}
+
+.container {
+    margin: 20px 20px 20px 20px;
+    position: absolute;
+    /*top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);*/
+}
+
+table {
+    /*width: 800px;*/
+    border-collapse: collapse;
+    overflow: hidden;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+th,
+td {
+    padding: 15px;
+    background-color: rgba(255, 255, 255, 0.2);
+    color: #fff;
+}
+
+th {
+    text-align: left;
+    border: 1px solid white;
+}
+
+thead th {
+    background-color: #55608f;
+    width: 180px;
+}
+
+td:nth-child(1) {
+    background-color: #55608f;
+    width: 200px;
+}
+
+tbody tr:hover {
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+tbody td {
+    position: relative;
+}
+
+tbody td:hover:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: -9999px;
+    bottom: -9999px;
+    background-color: rgba(255, 255, 255, 0.2);
+    z-index: -1;
+}
+
+/*1st table cell diagonally divided*/
+
+.background {
+    border: 1px solid white;
+    background-image: -webkit-gradient(linear, left bottom, right top, color-stop(49%, #55608f), color-stop(50%, white), color-stop(51%, #55608f));
+    background-image: -webkit-linear-gradient(bottom left, #55608f 49%, white 50%, #55608f 51%);
+    background-image: -o-linear-gradient(bottom left, #55608f 49%, white 50%, #55608f 51%);
+    background-image: linear-gradient(to top right, #55608f 49%, white 50%, #55608f 51%);
+}
+
+.c1 {
+    -webkit-transform: translate(-20px,20px);
+    -ms-transform: translate(-20px,20px);
+    transform: translate(-20px,20px);
+    padding-left: 20px;
+}
+
+.c2 {
+    -webkit-transform: translate(20px,-20px);
+    -ms-transform: translate(20px,-20px);
+    transform: translate(20px,-20px);
+    padding-left: 130px;
+}
+
+.note {
+    color : white;
+    border: 1px solid white;
+    padding: 10px;
+    width: 500px;
+}
+
+.my-legend .legend-title {
+    text-align: left;
+    margin-bottom: 5px;
+    font-weight: bold;
+    font-size: 90%;
+}
+
+.my-legend .legend-scale ul {
+    margin: 0;
+    margin-bottom: 5px;
+    padding: 0;
+    float: left;
+    list-style: none;
+}
+
+    .my-legend .legend-scale ul li {
+        font-size: 80%;
+        list-style: none;
+        margin-left: 0;
+        line-height: 18px;
+        margin-bottom: 2px;
+    }
+
+.my-legend ul.legend-labels li span {
+    display: block;
+    float: left;
+    height: 16px;
+    width: 30px;
+    margin-right: 5px;
+    margin-left: 0;
+    border: 1px solid #999;
+}
+
+.my-legend .legend-source {
+    font-size: 70%;
+    color: #999;
+    clear: both;
+}
+
+.my-legend a {
+    color: #777;
+}
+
+.tooltiptext {
+    visibility: hidden;
+}
+
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+}
+
+    .tooltip .tooltiptext {
+        visibility: hidden;
+        width: 140px;
+        background-color: black;
+        color: #fff;
+        padding: 3px;
+        text-align: center;
+        border-radius: 6px;
+        padding: 5px 0;
+        /* Position the tooltip */
+        position: absolute;
+        z-index: 1;
+    }

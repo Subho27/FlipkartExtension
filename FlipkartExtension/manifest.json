@@ -1,0 +1,34 @@
+{
+  "manifest_version": 3,
+  "name": "Flipkart Extension",
+  "version": "0.0.0",
+  "description": "To test Flipkart Extension",
+  "icons": {
+    "16": "sun.png",
+    "32": "sun.png",
+    "48": "sun.png",
+    "128": "sun.png"
+  },
+
+  "action": {
+    "default_icon": {
+      "16": "sun.png",
+      "24": "sun.png",
+      "32": "sun.png"
+    },
+    "default_title": "Click Me",
+    "default_popup": "popup.html"
+  },
+
+  "permissions": [ "activeTab", "scripting", "declarativeContent", "storage", "tabs" ],
+  "background": {
+    "service_worker": "background.js"
+  },
+
+  "content_scripts": [
+    {
+      "matches": [ "https://www.flipkart.com/*" ],
+      "js": [ "content-script.js" ]
+    }
+  ]
+}
